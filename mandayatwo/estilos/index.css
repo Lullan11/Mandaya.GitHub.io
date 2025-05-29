@@ -1,0 +1,342 @@
+body {
+  margin: 0%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: rgb(232, 232, 232); */
+  
+  background-image: url('/imgs/img8.jpg');
+  background-size: cover;         /* Ajusta la imagen al tamaño de la pantalla */
+  background-position: center;    /* Centra la imagen */
+  background-repeat: no-repeat;   /* No la repite */
+  background-attachment: fixed;   /* (Opcional) para efecto parallax */
+}
+
+
+/* header */
+header {
+  display: flex;                /* Activa Flexbox: organiza los hijos en fila */
+  align-items: center;          /* Centra verticalmente los elementos */
+  justify-content: center;      /* Centra todo horizontalmente */
+  gap: 1rem;                    /* Espacio entre el logo y el texto */
+  padding: 1rem;                /* Espacio interno alrededor */
+  background-color: rgb(22, 87, 60);  /* Color de fondo del header */
+}
+header h1 {
+  margin: 0%;
+  color: white;
+  font-size: 130px;
+}
+header img {
+  width: 200px;
+}
+
+
+/* linea separadora */
+hr {
+  margin: 0%;
+  border: 2px solid rgb(166, 255, 0);
+}
+
+
+/* barra de navegacion */
+ul {
+  background-color: #ffffff;
+  margin: 0%;
+  padding: 0%;
+  list-style-type: none;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+}
+
+li a{
+  display: block;
+  color: rgb(22, 87, 60);
+  padding: 25px;
+  text-decoration: none;
+  transition: 1s;
+  border-radius: 1px;
+}
+li a:hover {
+  color: rgb(166, 255, 0);
+  background-color: rgb(149, 149, 149);
+  border-radius: 1px;
+}
+
+
+/* seccion valores */
+h2 {
+  text-align: center;
+  background-color: white;
+  margin: 0%;
+  padding: 20px;
+}
+
+.valores {
+  flex: 1;
+  padding: 5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: auto;
+  background-color: rgba(22, 87, 60, 0.85); /* Semitransparente para ver fondo */
+
+}
+
+.valores div {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.valores div:hover {
+  transform: scale(1.05);
+}
+
+.valores img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.valores p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #155f3d;
+  margin: 1rem 0;
+}
+
+
+/* imagen */
+.mi_espacio {
+  padding: 350px 0;
+}
+
+
+
+/* seccion sobre nosotros */
+.titulo_nosotros {
+  background-color: white;
+  color: black;
+}
+.titulo_nosotros .verde {
+  color: rgba(22, 87, 60);
+}
+.nosotros {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255);
+  margin: 0%;
+  padding: 30px;
+}
+.nosotros h2 {
+  margin: 0%;
+}
+.nosotros .verde {
+  color: rgb(22, 87, 60);
+}
+.nosotros p {
+  margin: 20px 100px;
+}
+
+
+/* seccion de nuestros servicios */
+.titulo_servicios {
+  color: rgb(255, 255, 255);
+  background-color: rgb(22, 87, 60);
+}
+.titulo_servicios .verde {
+  color: rgb(166, 255, 0);
+}
+.servicios {
+  color: rgb(255, 255, 255);
+  background-color: rgba(22, 87, 60);
+  margin: 0%;
+  padding: 30px;
+}
+.servicios h2 {
+  margin: 0%;
+  background-color: rgba(22, 87, 60);
+}
+.servicios .verde {
+  color: rgb(166, 255, 0);
+}
+.servicios p {
+  margin: 20px 100px;
+}
+.servicio i {
+  font-size: 2rem;
+  color: rgb(166, 255, 0);
+}
+.servicios div {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.servicios div:hover {
+  background-color: rgb(18, 70, 48);
+  transform: scale(1.05);
+}
+
+
+
+
+/* seccion de nuestros servicios */
+.titulo_equipo {
+  background-color: rgb(249, 249, 249);
+  color: black;
+}
+.titulo_equipo .verde {
+  color: rgba(22, 87, 60);
+}
+.equipo {
+  color: rgb(0, 0, 0);
+  background-color: rgb(249, 249, 249);
+  margin: 0%;
+  padding: 60px;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  max-width: 100%;
+}
+.equipo h2 {
+  margin: 0%;
+}
+.equipo .verde {
+  color: rgb(22, 87, 60);
+}
+.equipo .detalles {
+  background-color: rgb(249, 249, 249);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.5s;
+}
+.equipo .detalles:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.01);
+}
+.equipo .detalles h3 {
+  display: block;
+  margin: 20px 0%;
+}
+.equipo .detalles h3:hover, .equipo .detalles p:hover{
+  color: rgb(166, 255, 0);
+}
+.equipo img {
+  width: 85%;
+  border-radius: 10px;
+
+}
+.equipo p {
+  margin: 10pxc 100%;
+  display: block;
+}
+
+
+/* footer */
+
+footer {
+  display: flex;
+  background-color:  rgb(22, 87, 60);
+  margin: 0%;
+  color: white;
+  gap: 1rem;
+  place-items: center; /* Centra en ambos ejes */
+  text-align: center;
+}
+footer .mandaya_footer {
+  background-color: rgb(22, 87, 60);
+}
+footer p {
+  margin: 0%;
+  padding: 15px;
+}
+.p {
+  margin: 0%;
+  padding: 15px;
+  color: rgb(166, 255, 0);
+}
+footer div {
+  display: block;
+  gap: 2rem;       /* Espacio controlado entre íconos */
+  width: 100%;
+
+}
+.volver{
+  padding: 500px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 100px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.volver:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+footer a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+footer i {
+  font-size: 24px;         /* Tamaño del ícono */
+  color: white;            /* Cambia según tu diseño */
+  margin: 0 10px;          /* Espacio entre íconos */
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;  /* Suavidad en hover */
+}
+
+
+footer i:hover {
+  color: rgb(166, 255, 0);      /* Color al pasar el mouse */
+  transform: scale(1.2);        /* Efecto de agrandamiento */
+}
+
+
+
+
+/* ========== RESPONSIVE ==========
+*/
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  nav ul{
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer{
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
