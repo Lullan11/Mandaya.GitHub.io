@@ -1,0 +1,83 @@
+/* Selectores principales(Etiqueta, clase, id)
+
+<h1 class="titulo">Bienvenido</h1>
+<p id="intro">Esto es una introducción.</p>
+
+h1 {
+  color: red;
+}
+
+.titulo {
+  font-size: 36px;
+}
+
+#intro {
+  background-color: yellow;
+} */
+/* ---------------------------------------------------------- */
+
+
+/* Estilos */
+
+h1{
+    color: blueviolet;
+}
+p {
+    color: azure;
+    background-color: black;
+    padding: 40px;
+    margin: 50px;
+    text-align: center;
+}
+/* Diseño enfocado en los enlaces */
+a:link, a:visited{
+    color: cadetblue;
+    text-decoration: none;
+    padding: 40px;
+    background-color: bisque;
+}
+a:hover, a:active{
+    padding: 40px;
+    background-color: black;
+    color: brown;
+    text-decoration: underline;
+}
+
+/* De aqui en adelante, estare dandole diseño a las tablas */
+caption {
+    color: #e6694e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    line-height: 70px;
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    /* otro estilo de borde */
+    /* border-spacing: 5px; */
+
+    padding: 5px;
+}
+
+/* renglones pares */
+tr:nth-child(even) {
+    background-color: #f1faee;
+}
+/* renglones impares */
+tr:nth-child(odd) {
+    background-color: #a8dadc;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    /* text-align: left; */
+    color: #f1faee;
+    background-color: #1d3557;
+}
